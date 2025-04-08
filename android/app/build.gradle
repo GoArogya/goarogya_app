@@ -1,0 +1,39 @@
+// Apply required plugins
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'dev.flutter.flutter-gradle-plugin'
+
+android {
+    namespace 'com.example.goarogya_app'
+    compileSdk 35
+    ndkVersion "25.1.8937393"
+
+    defaultConfig {
+        applicationId "com.example.goarogya_app"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            // TODO: Replace debug signing with a proper release signingConfig when releasing the app.
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}

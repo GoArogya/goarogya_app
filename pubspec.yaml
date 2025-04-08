@@ -1,0 +1,100 @@
+name: goarogya_app
+description: A healthcare app for women in rural India.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI Components
+  cupertino_icons: 
+  flutter_svg: 
+  cached_network_image: 
+  shimmer: 
+  lottie: 
+  flutter_animate: 
+  
+  # State Management
+  provider: 
+  flutter_bloc: 
+  
+  # Navigation
+  go_router: 
+  
+  # Localization
+  intl: 
+  flutter_localizations:
+    sdk: flutter
+    
+  # Network & API
+  http: 
+  dio: 
+  connectivity_plus: 
+  
+  # Storage
+  shared_preferences: 
+  sqflite: 
+  path_provider: 
+  # Location Services
+  geolocator: 
+  google_maps_flutter: 
+
+  # Authentication
+  firebase_core: 
+  firebase_auth: 
+  google_sign_in: 
+  
+  # Voice & Speech
+  speech_to_text: 
+  flutter_tts:
+  
+  # Calendar & Date
+  table_calendar: 
+  
+  # Charts & Graphs
+  fl_chart: 
+  syncfusion_flutter_charts:
+  
+  # Utilities
+  permission_handler:
+  image_picker: 
+  url_launcher: 
+  package_info_plus: 
+  device_info_plus: 
+  
+  # Animations
+  flutter_spinkit: 
+  
+  # Notifications
+  # flutter_local_notifications:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+  build_runner: 
+  # flutter_launcher_icons: 
+  flutter_native_splash: 
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - lib/assets/images/
+    # - assets/icons/
+    # - assets/animations/
+    
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Poppins-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
